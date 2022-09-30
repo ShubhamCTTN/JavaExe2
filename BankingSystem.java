@@ -3,8 +3,8 @@ package exe2;
 public class BankingSystem {
     private Double rateOfintrest=1.2;
     private String pName="XYZ";
-    private int accountNo=50100235;
-    private int salary=32000;
+    private int accountNo=6547893214;
+    private int salary=10000;
 public BankingSystem() {}
     public BankingSystem(double rateOfintrest, String pName,int accountNo, int salary) {
         this.rateOfintrest = rateOfintrest;
