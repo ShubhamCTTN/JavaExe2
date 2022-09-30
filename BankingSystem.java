@@ -2,7 +2,7 @@ package exe2;
 
 public class BankingSystem {
     private Double rateOfintrest=1.2;
-    private String pName="Ravi Gupta";
+    private String pName="XYZ";
     private int accountNo=50100235;
     private int salary=32000;
 public BankingSystem() {}
