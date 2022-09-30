@@ -1,3 +1,21 @@
+/*
+ * Implement a banking system using java.
+
+Create 3 sub class of Bank : SBI,BOI,ICICI
+
+All 4 should have following methods:
+
+getDetails which provide their specific details like rateofinterest etc
+printDetails of every bank.
+Every bank account should have a type (enum): SAVINGS, CURRENT
+Implement a feature to deduct amount from account. Throw InsufficientAmountException,
+if amount being deducted is less than the current balance.
+Every banking transaction should be saved in a file of each bank's transaction log,
+which would have all details of the transaction like 
+(time of transaction,account number,amount withdrawn, amount before deduction, amount after deduction,
+transaction status (can also be enum), failure reason if any)*/
+
+
 package exe2;
 
 import java.util.Scanner;
@@ -10,22 +28,22 @@ public class Mainclass {
 		Icici i = new Icici();
 		BankingSystem bank = new BankingSystem();
 		Scanner scan = new Scanner(System.in);
+
 		int option = '\0';
 		int option2 = '\0';
 		int option3 = '\0';
 		int Salary;
-		String nme;
+		String name;
 		int account;
 		int money;
 		char c;
-		;
 		System.out.println("................Welcome to Bank.................");
 
 		System.out.println("Name: " + bank.getName());
 		System.out.println("Account Number: " + bank.getAccountNo());
 		System.out.println("Salary: " + bank.getsalary());
 
-		System.out.println("................Select ypur Bank.................");
+		System.out.println("................Select your Bank.................");
 		System.out.println("1.  SBI....");
 		System.out.println("2.  BOI....");
 		System.out.println("3.  ICICI....");
